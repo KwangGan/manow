@@ -19,3 +19,5 @@ Route::get('/', function () {
 Route::group(['prefix' => 'manage'], function () {
     Voyager::routes();
 });
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
